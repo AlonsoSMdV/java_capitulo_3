@@ -1,17 +1,20 @@
-/**
-* Sentencia if
-*
-* @author Luis J. Sánchez
-*/
+import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String[] args) {
-    System.out.print("¿Qué nota has sacado en el último examen? ");
-    String line = System.console().readLine();
-    double nota = Double.parseDouble( line );
-    if (nota >= 5) {
-    System.out.println("¡Enhorabuena!, ¡has aprobado!");
-    } else {
-    System.out.println("Lo siento, has suspendido.");
-    }
+        Scanner s = new Scanner(System.in);
+        int num1;
+        int num2;
+        String linea;
+
+        System.out.print("Introduzca el primer dígito: ");
+        linea = System.console().readLine();
+        num1 = Integer.parseInt(linea);
+
+
+        System.out.print("Introduzca el segundo dígito: ");
+        linea = System.console().readLine();
+        num2 = Integer.parseInt(linea);
+
+        System.out.print(num1+"*"+num2+"="+(num1 * num2));
     }
     }
